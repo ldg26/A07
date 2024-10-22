@@ -70,7 +70,7 @@ footer p {
 }
 
 .float-left {
-    float: left;
+    float: left; /* Keep the float for the logo */
     margin-right: 15px; 
 }
 
@@ -79,13 +79,17 @@ header {
     padding: 1.5em 0 2em; /* Padding for header */
 }
 
-header h1,
-header h2 {
-    text-indent: 0; /* Remove text-indent */
-}
-
 header img {
     padding: 0 30px; /* Padding for image in header */
+}
+
+header h1,
+header h2 {
+    margin: 0; /* Remove margin for h1 and h2 */
+}
+
+h1 {
+    clear: both; /* Ensure heading does not wrap around floated elements */
 }
 
 main {
