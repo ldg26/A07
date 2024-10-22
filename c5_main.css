@@ -33,14 +33,6 @@ h1, h2 {
     color: black;
 }
 
-.header-text {
-    display: inline-block; 
-    vertical-align: top; 
-    margin-left: 10px; 
-    text-align: left; 
-    float: right; /* Float header text to the right of the logo */
-}
-
 h2 {
     font-size: 170%;
 }
@@ -64,9 +56,6 @@ a:hover {
 
 footer {
     background-color: var(--global-color-1);
-}
-
-footer p {
     color: white; /* Set font color for the footer text */
     text-align: center; 
     padding: 1em; /* Add padding to the footer */
@@ -76,20 +65,21 @@ footer p {
     text-shadow: 2px 2px 4px var(--global-color-1); 
 }
 
-.float-left {
-    float: left;
-    margin-right: 15px; 
-}
-
 header img {
     float: left; /* Keep the image floated to the left */
     margin-right: 15px; 
 }
 
-header::after {
-    content: "";
-    display: table;
-    clear: both;
+.header-text {
+    display: inline-block; 
+    vertical-align: top; 
+    margin-left: 10px; 
+    text-align: left; 
+    float: right; /* Float header text to the right of the logo */
+}
+
+header h2, header h3 {
+    margin: 0; /* Remove default margins to align properly */
 }
 
 blockquote {
@@ -104,4 +94,10 @@ h1 {
 
 main {
     padding: 0 30px; /* Add padding to the main element */
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
 }
