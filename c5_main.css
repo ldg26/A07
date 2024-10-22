@@ -38,7 +38,7 @@ h1, h2 {
     vertical-align: top; 
     margin-left: 10px; 
     text-align: left; 
-    float: right; /* Float the header text to the right */
+    float: right; /* Float header text to the right of the logo */
 }
 
 h2 {
@@ -48,6 +48,7 @@ h2 {
 h2.mission,
 h2.ticket-packages {
     text-indent: 0; 
+    clear: both; /* Ensures this is below the floated elements */
 }
 
 h3 {
