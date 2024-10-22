@@ -48,7 +48,7 @@ h2 {
 h2.mission,
 h2.ticket-packages {
     text-indent: 0; 
-    clear: both; /* Ensures this is below the floated elements */
+    clear: both; /* Ensures that this is below the floated elements */
 }
 
 h3 {
