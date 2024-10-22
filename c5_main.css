@@ -38,6 +38,7 @@ h1, h2 {
     vertical-align: top; 
     margin-left: 10px; 
     text-align: left; 
+    float: right; /* Float header text to the right */
 }
 
 h2 {
@@ -70,26 +71,19 @@ footer p {
 }
 
 .float-left {
-    float: left; /* Keep the float for the logo */
+    float: left;
     margin-right: 15px; 
 }
 
 header {
     border-bottom: 3px solid #931420; /* Bottom border for header */
     padding: 1.5em 0 2em; /* Padding for header */
+    overflow: auto; /* Clear floats */
 }
 
 header img {
-    padding: 0 30px; /* Padding for image in header */
-}
-
-header h1,
-header h2 {
-    margin: 0; /* Remove margin for h1 and h2 */
-}
-
-h1 {
-    clear: both; /* Ensure heading does not wrap around floated elements */
+    float: left; /* Keep the logo floating to the left */
+    margin-right: 15px; /* Margin for spacing between logo and text */
 }
 
 main {
