@@ -38,6 +38,7 @@ h1, h2 {
     vertical-align: top; 
     margin-left: 10px; 
     text-align: left; 
+    float: right; /* Float the header text to the right */
 }
 
 h2 {
@@ -82,10 +83,6 @@ header {
 header img {
     float: left; /* Keep the logo floating to the left */
     margin-right: 15px; /* Margin for spacing between logo and text */
-}
-
-.header-text {
-    float: right; /* Keep the header text to the right of the logo */
 }
 
 main {
