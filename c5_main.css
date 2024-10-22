@@ -2,23 +2,23 @@
     --global-color-1: #800000; 
 }
 
-/* Reset selector */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif; 
-    width: 600px; /* Set width for centering */
-    margin: 0 auto; /* Center the body */
-    border: 3px solid #931420; /* Border for the body */
-    background-color: #fffded; /* Background color for the body */
+    width: 600px; 
+    margin: 0 auto; 
+    border: 3px solid #931420; 
+    background-color: #fffded; 
 }
 
 html {
-    background-color: white; /* Background color for the html element */
+    background-color: white; 
+}
+
+header {
+    border-bottom: 3px solid #931420; 
+    padding-top: 1.5em; 
+    padding-bottom: 2em; 
+    background: linear-gradient(30deg, #6bb73 0%, #f6bb73 30%, white 50%, #6bb73 80%, #f6bb73 100%);
 }
 
 h1, h2 {
@@ -61,9 +61,14 @@ a:hover {
     font-style: italic; 
 }
 
+footer {
+    background-color: var(--global-color-1);
+}
+
 footer p {
+    color: white; /* Set font color for the footer text */
     text-align: center; 
-    color: white; /* Font color for footer */
+    padding: 1em; /* Add padding to the footer */
 }
 
 .shadow {
@@ -73,42 +78,25 @@ footer p {
 .float-left {
     float: left;
     margin-right: 15px; 
+    padding: 30px; /* Adjusted padding for the header image */
 }
 
-header {
-    border-bottom: 3px solid #931420; /* Bottom border for header */
-    padding: 1.5em 0 2em; /* Padding for header */
+header::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-header img {
-    float: left; /* Keep the logo floating to the left */
-    margin-right: 15px; /* Margin for spacing between logo and text */
+blockquote {
+    font-style: italic; /* Italicize blockquote */
+}
+
+h1 {
+    border-top: 3px solid #931420; 
+    border-bottom: 3px solid #931420; 
+    padding: 1em 0; /* Add padding to the h1 */
 }
 
 main {
-    padding: 0 30px; /* Padding for main element */
+    padding: 0 30px; /* Add padding to the main element */
 }
-
-footer {
-    background-color: #931420; /* Background color for footer */
-    padding: 10px 0; /* Padding for footer */
-}
-
-.speakers-heading {
-    border: double 4px #800000; /* Double border for Speakers heading */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Box shadow */
-    padding: 10px; /* Padding for spacing */
-    background-color: white; /* Background color for Speakers heading */
-    color: var(--global-color-1); /* Use global color */
-    text-align: center; /* Center align text */
-    margin: 20px 0; /* Margin for spacing */
-}
-
-.speakers-heading:hover {
-    background-color: #f0f0f0; /* Change background on hover */
-    transform: scale(1.05); /* Slightly enlarge the heading */
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
-}
-
-/* Add any additional styles below */
