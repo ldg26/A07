@@ -19,8 +19,8 @@ header {
 }
 
 h1 {
-    border-top: 3px solid #931420;   /* Step 5: Add top border to h1 */
-    border-bottom: 3px solid #931420;/* Step 5: Add bottom border to h1 */
+    border-top: 3px solid #931420;
+    border-bottom: 3px solid #931420;
 }
 
 h1, h2 {
@@ -62,7 +62,12 @@ a:hover {
     font-style: italic;
 }
 
+footer {
+    background-color: #931420;  /* Step 6: Set background color of footer */
+}
+
 footer p {
+    color: white;               /* Step 6: Set text color of footer paragraph */
     text-align: center;
 }
 
