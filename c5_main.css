@@ -3,19 +3,23 @@
 }
 
 body {
-    font-family: Arial, sans-serif; 
-    width: 600px;              /* Set the width to 600 pixels */
-    margin: 0 auto;           /* Set top and bottom margins to 0 and right/left margins to auto */
-    border: 3px solid #931420; /* Add a 3-pixel solid border with color #931420 */
-    background-color: #fffded; /* Set the background color to #fffded */
+    font-family: Arial, sans-serif;
+    width: 600px;
+    margin: 0 auto;
+    border: 3px solid #931420;
+    background-color: #fffded; /* Step 3: body background color */
+}
+
+html {
+    background-color: white; /* Step 3: Set the html background color */
 }
 
 h1, h2 {
-    color: var(--global-color-1); 
+    color: var(--global-color-1);
 }
 
 .red {
-    color: var(--global-color-1); 
+    color: var(--global-color-1);
 }
 
 .black {
@@ -23,10 +27,10 @@ h1, h2 {
 }
 
 .header-text {
-    display: inline-block; 
-    vertical-align: top; 
-    margin-left: 10px; 
-    text-align: left; 
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    text-align: left;
 }
 
 h2 {
@@ -35,31 +39,31 @@ h2 {
 
 h2.mission,
 h2.ticket-packages {
-    text-indent: 0; 
+    text-indent: 0;
 }
 
 h3 {
     font-size: 130%;
-    font-style: italic; 
-    text-indent: 0; 
+    font-style: italic;
+    text-indent: 0;
 }
 
 a:focus,
 a:hover {
-    font-style: italic; 
+    font-style: italic;
 }
 
 footer p {
-    text-align: center; 
+    text-align: center;
 }
 
 .shadow {
-    text-shadow: 2px 2px 4px var(--global-color-1); 
+    text-shadow: 2px 2px 4px var(--global-color-1);
 }
 
 .float-left {
     float: left;
-    margin-right: 15px; 
+    margin-right: 15px;
 }
 
 header::after {
