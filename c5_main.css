@@ -1,9 +1,12 @@
- :root {
+:root {
     --global-color-1: #800000; 
 }
 
 body {
     font-family: Arial, sans-serif; 
+    width: 600px;                     /* Set the width to 600 pixels */
+    margin: 0 auto;                  /* Set the right and left margins to auto */
+    border: 3px solid #931420;       /* Add a 3-pixel solid border with color #931420 */
 }
 
 h1, h2 {
