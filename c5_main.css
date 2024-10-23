@@ -63,18 +63,3 @@ header::after {
     display: table;
     clear: both;
 }
-
-header {
-    padding: 1.5em 0 2em; /* Top and bottom padding */
-    overflow: hidden; /* Add this to clear the floats */
-}
-
-img.float-left {
-    float: left; /* Make sure the image is floated left */
-    margin-right: 15px; /* Margin for spacing */
-    padding: 0 30px; /* Padding for image */
-}
-
-main {
-    padding: 30px; /* Add 30 pixels of padding to the right and left */
-}
