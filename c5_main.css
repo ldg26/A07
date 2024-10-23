@@ -40,19 +40,31 @@ h1, h2 {
     text-align: left; 
 }
 
+header {
+    padding: 1.5em 0 2em; /* Top and bottom padding */
+}
+
 h2 {
     font-size: 170%;
 }
 
 h2.mission,
 h2.ticket-packages {
-    text-indent: 0; 
+    text-indent: 0; /* Removed text-indent */
 }
 
 h3 {
     font-size: 130%;
     font-style: italic; 
-    text-indent: 0; 
+    text-indent: 0; /* Removed text-indent */
+}
+
+h3 {
+    padding: 0; /* Ensure no text indent for h3 */
+}
+
+img {
+    padding: 0 30px; /* Padding on the right and left of the image */
 }
 
 a:focus,
