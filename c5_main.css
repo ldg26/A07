@@ -4,14 +4,6 @@
 
 body {
     font-family: Arial, sans-serif; 
-    width: 600px;
-    margin: 0 auto; /* This centers the page */
-    border: 3px solid #931420; /* Border color */
-    background-color: #fffded; /* Light background for the body */
-}
-
-html {
-    background-color: white; /* Background color for the full page */
 }
 
 h1, h2 {
@@ -53,14 +45,8 @@ a:hover {
     font-style: italic; 
 }
 
-footer {
-    background-color: #931420; /* Same color as the borders */
-    padding: 1em 0; /* Optional: Adding some padding */
-}
-
 footer p {
-    color: white; /* Font color changed to white for readability */
-    text-align: center; /* Keeps the text centered */
+    text-align: center; 
 }
 
 .shadow {
@@ -78,8 +64,17 @@ header::after {
     clear: both;
 }
 
-h1 {
-    border-top: 3px solid #931420; /* Adding top and bottom borders */
-    border-bottom: 3px solid #931420;
-    padding: 10px 0; /* Padding between the borders and text */
+header {
+    padding: 1.5em 0 2em; /* Top and bottom padding */
+    overflow: hidden; /* Add this to clear the floats */
+}
+
+img.float-left {
+    float: left; /* Make sure the image is floated left */
+    margin-right: 15px; /* Margin for spacing */
+    padding: 0 30px; /* Padding for image */
+}
+
+main {
+    padding: 30px; /* Add 30 pixels of padding to the right and left */
 }
