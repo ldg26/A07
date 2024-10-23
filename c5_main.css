@@ -3,32 +3,23 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; 
     width: 600px;
-    margin: 0 auto;
-    border: 3px solid #931420;
-    background-color: #fffded;
+    margin: 0 auto; /* This centers the page */
+    border: 3px solid #931420; /* Border color */
+    background-color: #fffded; /* Light background for the body */
 }
 
 html {
-    background-color: white;
-}
-
-header {
-    border-bottom: 3px solid #931420;
-}
-
-h1 {
-    border-top: 3px solid #931420;
-    border-bottom: 3px solid #931420;
+    background-color: white; /* Background color for the full page */
 }
 
 h1, h2 {
-    color: var(--global-color-1);
+    color: var(--global-color-1); 
 }
 
 .red {
-    color: var(--global-color-1);
+    color: var(--global-color-1); 
 }
 
 .black {
@@ -36,10 +27,10 @@ h1, h2 {
 }
 
 .header-text {
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 10px;
-    text-align: left;
+    display: inline-block; 
+    vertical-align: top; 
+    margin-left: 10px; 
+    text-align: left; 
 }
 
 h2 {
@@ -48,40 +39,47 @@ h2 {
 
 h2.mission,
 h2.ticket-packages {
-    text-indent: 0;
+    text-indent: 0; 
 }
 
 h3 {
     font-size: 130%;
-    font-style: italic;
-    text-indent: 0;
+    font-style: italic; 
+    text-indent: 0; 
 }
 
 a:focus,
 a:hover {
-    font-style: italic;
+    font-style: italic; 
 }
 
 footer {
-    background-color: #931420;  /* Step 6: Set background color of footer */
+    background-color: #931420; /* Same color as the borders */
+    padding: 1em 0; /* Optional: Adding some padding */
 }
 
 footer p {
-    color: white;               /* Step 6: Set text color of footer paragraph */
-    text-align: center;
+    color: white; /* Font color changed to white for readability */
+    text-align: center; /* Keeps the text centered */
 }
 
 .shadow {
-    text-shadow: 2px 2px 4px var(--global-color-1);
+    text-shadow: 2px 2px 4px var(--global-color-1); 
 }
 
 .float-left {
     float: left;
-    margin-right: 15px;
+    margin-right: 15px; 
 }
 
 header::after {
     content: "";
     display: table;
     clear: both;
+}
+
+h1 {
+    border-top: 3px solid #931420; /* Adding top and bottom borders */
+    border-bottom: 3px solid #931420;
+    padding: 10px 0; /* Padding between the borders and text */
 }
