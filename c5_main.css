@@ -1,20 +1,12 @@
-/* Reset Selector */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Existing CSS */
 :root {
-    --global-color-1: #931420;
+    --global-color-1: #800000; 
 }
 
 body {
     font-family: Arial, sans-serif;
     width: 600px;
     margin: 0 auto;
-    border: 3px solid var(--global-color-1);
+    border: 3px solid #931420;
     background-color: #fffded;
 }
 
@@ -26,6 +18,14 @@ h1, h2 {
     color: var(--global-color-1);
 }
 
+.red {
+    color: var(--global-color-1);
+}
+
+.black {
+    color: black;
+}
+
 .header-text {
     display: inline-block;
     vertical-align: top;
@@ -33,16 +33,49 @@ h1, h2 {
     text-align: left;
 }
 
-/* Header styling */
-header {
-    border-bottom: 3px solid var(--global-color-1);
-    padding-top: 1.5em;
-    padding-bottom: 2em;
+h2 {
+    font-size: 170%;
 }
 
-footer {
-    background-color: var(--global-color-1);
-    color: white;
-    padding: 1em;
+h3 {
+    font-size: 130%;
+    font-style: italic;
+}
+
+a:focus,
+a:hover {
+    font-style: italic;
+}
+
+footer p {
     text-align: center;
+    color: white;
+}
+
+.shadow {
+    text-shadow: 2px 2px 4px var(--global-color-1);
+}
+
+.float-left {
+    float: left;
+    margin-right: 30px; /* Added 30px padding to the right and left of the image */
+    padding-left: 30px;
+}
+
+header {
+    padding-top: 1.5em; /* Added 1.5em padding at the top */
+    padding-bottom: 2em; /* Added 2em padding at the bottom */
+    border-bottom: 3px solid #931420; /* Added bottom border to match body */
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Reset the text-indent rules as per instruction */
+h2.mission,
+h2.ticket-packages {
+    text-indent: 0;
 }
