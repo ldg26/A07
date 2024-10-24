@@ -30,17 +30,16 @@ h1, h2 {
     display: inline-block;
     vertical-align: top;
     margin-left: 10px;
-    text-align: left;
 }
 
 .title-wrapper {
-    border-bottom: 3px solid #931420;
+    border-bottom: 3px solid #931420; /* Keep this for the main title and subtitle */
     padding-bottom: 5px;
 }
 
 h1 {
     margin-bottom: 0;
-    border: none;
+    border: none; /* Ensure no borders on h1 */
 }
 
 h2 {
@@ -66,7 +65,7 @@ a:hover {
 
 footer p {
     text-align: center;
-    border-top: 3px solid #931420;
+    border-top: 3px solid #931420; /* Retains border on footer */
     padding-top: 10px;
 }
 
@@ -81,7 +80,6 @@ footer p {
 
 /* Gradient background for header */
 header {
-    border-bottom: 3px solid #931420;
     background: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
     padding: 10px 0; /* Optional: Adds some padding to make the gradient more visible */
 }
@@ -94,8 +92,8 @@ header::after {
 
 /* Borders for "This season's guest speakers" h1 */
 h1.season-speakers {
-    border-top: 3px solid #931420;
-    border-bottom: 3px solid #931420;
+    border-top: 3px solid #931420; /* Top border for season speakers */
+    border-bottom: 3px solid #931420; /* Bottom border for season speakers */
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 20px;
