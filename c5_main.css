@@ -19,7 +19,7 @@ h1, h2 {
 }
 
 .red {
-    color: var(--global-color-1);
+    color: var(--global-color-1); 
 }
 
 .black {
@@ -27,61 +27,57 @@ h1, h2 {
 }
 
 .header-text {
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 10px;
-    text-align: left;
-}
-
-.title-wrapper {
-    border-bottom: 3px solid #931420;
-    padding-bottom: 5px;
+    display: inline-block; 
+    vertical-align: top; 
+    margin-left: 10px; 
+    text-align: left; 
 }
 
 h1 {
-    margin-bottom: 0;
-    border: none;
+    margin-bottom: 0; 
 }
 
 h2 {
-    margin-top: 0;
-    font-size: 170%;
+    margin-top: 0; 
+    font-size: 170%; 
 }
 
 h2.mission,
 h2.ticket-packages {
-    text-indent: 0;
+    text-indent: 0; 
 }
 
 h3 {
-    font-size: 130%;
-    font-style: italic;
-    text-indent: 0;
+    font-size: 130%; 
+    font-style: italic; 
+    text-indent: 0; 
 }
 
 a:focus,
 a:hover {
-    font-style: italic;
+    font-style: italic; 
 }
 
-footer p {
-    text-align: center;
-    border-top: 3px solid #931420;
-    padding-top: 10px;
+footer {
+    background-color: var(--global-color-1); /* Use the global variable for footer background */
+    color: white; /* Set text color to white */
+    text-align: center; 
+    padding: 10px 0; /* Optional: Adds some padding for better spacing */
+    border-top: 3px solid #931420; /* Keep the top border */
 }
 
 .shadow {
-    text-shadow: 2px 2px 4px var(--global-color-1);
+    text-shadow: 2px 2px 4px var(--global-color-1); 
 }
 
 .float-left {
-    float: left;
-    margin-right: 15px;
+    float: left; 
+    margin-right: 15px; 
 }
 
 /* Gradient background for header */
 header {
-    border-bottom: 3px solid #931420;
+    border-bottom: 3px solid #931420; 
     background: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
     padding: 10px 0; /* Optional: Adds some padding to make the gradient more visible */
 }
@@ -89,15 +85,15 @@ header {
 header::after {
     content: "";
     display: table;
-    clear: both;
+    clear: both; 
 }
 
 /* Borders for "This season's guest speakers" h1 */
 h1.season-speakers {
-    border-top: 3px solid #931420; /* Top border */
-    border-bottom: 3px solid #931420; /* Bottom border */
-    padding-top: 10px; /* Space inside the top border */
-    padding-bottom: 10px; /* Space inside the bottom border */
-    margin-top: 20px; /* Space above the section */
-    margin-bottom: 20px; /* Space below the section */
+    border-top: 3px solid #931420; 
+    border-bottom: 3px solid #931420; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
 }
