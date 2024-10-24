@@ -17,8 +17,8 @@ html {
 h1 {
     color: var(--global-color-1); /* Ensure h1 uses the global color */
     background: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
-    padding-top: 1.5em; /* Add padding to the top */
-    padding-bottom: 1em; /* Add padding to the bottom */
+    padding-top: .5 em; /* Add padding to the top */
+    padding-bottom: .5em; /* Add padding to the bottom */
     border-bottom: 2px solid #931420; /* Add border at the bottom */
 }
 
