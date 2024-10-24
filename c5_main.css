@@ -58,20 +58,25 @@ footer p {
 
 .float-left {
     float: left;
-    margin-right: 30px; /* Added 30px padding to the right and left of the image */
-    padding-left: 30px;
+    margin-right: 30px; /* 30px padding on right */
+    padding-left: 30px; /* 30px padding on left */
 }
 
 header {
-    padding-top: 1.5em; /* Added 1.5em padding at the top */
-    padding-bottom: 2em; /* Added 2em padding at the bottom */
-    border-bottom: 3px solid #931420; /* Added bottom border to match body */
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    border-bottom: 3px solid #931420;
 }
 
 header::after {
     content: "";
     display: table;
     clear: both;
+}
+
+main {
+    padding-left: 30px; /* Added 30px padding to the left */
+    padding-right: 30px; /* Added 30px padding to the right */
 }
 
 /* Reset the text-indent rules as per instruction */
