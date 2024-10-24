@@ -6,7 +6,7 @@ body {
     font-family: Arial, sans-serif;
     width: 600px;
     margin: 0 auto;
-    border: 3px solid #931420;
+    border: 2px solid #931420;
     background-color: #fffded;
 }
 
@@ -19,13 +19,6 @@ h1 {
     background: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
     padding-top: 0.5em; /* Add padding to the top */
     padding-bottom: 0.5em; /* Add padding to the bottom */
-    position: relative; /* Enable positioning */
-    left: -10px; /* Adjust this value as necessary */
-    right: -10px; /* Adjust this value as necessary */
-    margin-left: 0; /* Remove margin to avoid centering issues */
-    margin-right: 0; /* Remove margin to avoid centering issues */
-    border-bottom: 2px solid #931420; /* Add border at the bottom */
-    z-index: 1; /* Ensure it appears above any background elements */
 }
 
 .red {
