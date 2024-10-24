@@ -62,7 +62,7 @@ footer p {
     padding-left: 30px; /* 30px padding on left */
 }
 
-header {
+h1 {
     background: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
     padding-top: 1.5em; /* Make sure this line is included if not already */
     padding-bottom: 2em; /* Make sure this line is included if not already */
