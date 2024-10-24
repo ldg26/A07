@@ -4,6 +4,7 @@
 
 body {
     font-family: Arial, sans-serif; 
+    border: 3px solid #931420; /* Border around the body */
 }
 
 h1, h2 {
@@ -25,8 +26,14 @@ h1, h2 {
     text-align: left; 
 }
 
+h1 {
+    font-size: 170%;
+    border-bottom: 3px solid #931420; /* Bottom border for the main heading */
+}
+
 h2 {
     font-size: 170%;
+    border-bottom: 3px solid #931420; /* Bottom border for the header */
 }
 
 h2.mission,
@@ -58,18 +65,41 @@ footer p {
     margin-right: 15px; 
 }
 
+header {
+    border-bottom: 3px solid #931420; /* Bottom border for the header */
+}
+
 header::after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* New border styles */
-header h1 {
-    border-bottom: 3px solid var(--global-color-1); /* Bottom border for combined title */
+blockquote {
+    font-style: italic; /* Italicize the blockquote element */
 }
 
-.main h1 {
-    border-top: 3px solid var(--global-color-1); /* Top border for speakers section */
-    border-bottom: 3px solid var(--global-color-1); /* Bottom border for speakers section */
+/* Reset Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Padding for header, main, and footer */
+header {
+    padding-top: 1.5em; /* Top padding for header */
+    padding-bottom: 2em; /* Bottom padding for header */
+}
+
+main {
+    padding: 30px; /* Padding for main element */
+}
+
+h1:last-child {
+    border-top: 3px solid #931420; /* Top border for 'This season's guest speakers' heading */
+}
+
+h1:last-child span.black {
+    border-top: 3px solid #931420; /* Top border for 'This season's guest speakers' heading */
 }
