@@ -63,6 +63,12 @@ footer p {
 }
 
 header {
+    background: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+    padding-top: 1.5em; /* 1.5 ems of padding at the top */
+    padding-bottom: 2em; /* 2 ems of padding at the bottom */
+    border-bottom: 3px solid #931420; /* Same border as the body */
+}
+
     padding-top: 1.5em;
     padding-bottom: 2em;
     border-bottom: 3px solid #931420;
