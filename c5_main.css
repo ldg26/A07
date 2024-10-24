@@ -1,16 +1,7 @@
-/* Reset selector */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Global color variable */
 :root {
-    --global-color-1: #800000;
+    --global-color-1: #800000; 
 }
 
-/* Body styles */
 body {
     font-family: Arial, sans-serif;
     width: 600px;
@@ -19,27 +10,22 @@ body {
     background-color: #fffded;
 }
 
-/* HTML element for background fix */
 html {
     background-color: white;
 }
 
-/* Header styles */
-header {
-    padding-top: 1.5em;
-    padding-bottom: 2em;
-    border-bottom: 3px solid #931420;
+h1, h2 {
+    color: var(--global-color-1);
 }
 
-/* Header image styles */
-header img {
-    float: left;
-    margin-right: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+.red {
+    color: var(--global-color-1);
 }
 
-/* Header text */
+.black {
+    color: black;
+}
+
 .header-text {
     display: inline-block;
     vertical-align: top;
@@ -47,73 +33,54 @@ header img {
     text-align: left;
 }
 
-/* Title and subtitle styles */
-h1 {
-    font-size: 200%;
-    text-align: left;
-}
-
-h1, h2 {
-    color: var(--global-color-1);
-}
-
-/* Specific h2 styles */
-h2.mission, h2.ticket-packages {
-    text-indent: 0; /* Removed text indent */
-}
-
 h2 {
     font-size: 170%;
 }
 
-/* h3 heading styles */
 h3 {
     font-size: 130%;
     font-style: italic;
-    text-indent: 0; /* Removed text indent */
 }
 
-/* Anchor hover styles */
-a:focus, a:hover {
+a:focus,
+a:hover {
     font-style: italic;
 }
 
-/* Footer styles */
 footer p {
     text-align: center;
-    background-color: #931420;
     color: white;
-    padding: 10px;
-    border-top: 3px solid #931420;
 }
 
-/* Shadow effect */
 .shadow {
     text-shadow: 2px 2px 4px var(--global-color-1);
 }
 
-/* Float left */
 .float-left {
     float: left;
-    margin-right: 15px;
+    margin-right: 30px; /* 30px padding on right */
+    padding-left: 30px; /* 30px padding on left */
 }
 
-/* Main element padding */
+header {
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    border-bottom: 3px solid #931420;
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 main {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 30px; /* Added 30px padding to the left */
+    padding-right: 30px; /* Added 30px padding to the right */
 }
 
-/* Styling for blockquote */
-blockquote {
-    font-style: italic;
-}
-
-/* Additional h1 and h2 styles */
-.red {
-    color: var(--global-color-1);
-}
-
-.black {
-    color: black;
+/* Reset the text-indent rules as per instruction */
+h2.mission,
+h2.ticket-packages {
+    text-indent: 0;
 }
