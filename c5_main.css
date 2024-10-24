@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensure padding and border widths are included in the element's total width and height */
+    box-sizing: border-box; /* This ensures that padding and border widths are included in the element's total width and height */
 }
 
 :root {
@@ -23,7 +23,6 @@ html {
 header {
     border-bottom: 3px solid #931420; /* Bottom border for header */
     padding: 1.5em 0 2em; /* Top and bottom padding for header */
-    overflow: hidden; /* Clear floats in the header */
 }
 
 h1, h2 {
@@ -43,12 +42,6 @@ h1, h2 {
     vertical-align: top; 
     margin-left: 10px; 
     text-align: left; 
-}
-
-h1 {
-    font-size: 200%; /* Increase font size for h1 if needed */
-    float: left; /* Float h1 to the left */
-    margin-bottom: 10px; /* Add bottom margin to create space from the next element */
 }
 
 h2 {
