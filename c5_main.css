@@ -1,48 +1,82 @@
-/* Reset Selector */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Existing CSS */
 :root {
-    --global-color-1: #931420;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    width: 600px;
-    margin: 0 auto;
-    border: 3px solid var(--global-color-1);
-    background-color: #fffded;
+    --global-color-1: #800000; 
 }
 
 html {
-    background-color: white;
+    background-color: white; /* Set background color for the html element */
+}
+
+body {
+    font-family: Arial, sans-serif; 
+    width: 600px; /* Set width for the body */
+    margin: 0 auto; /* Center the body */
+    border: 3px solid #931420; /* Add border around the body */
+    background-color: #fffded; /* Set background color for the body */
 }
 
 h1, h2 {
-    color: var(--global-color-1);
+    color: var(--global-color-1); 
+}
+
+.red {
+    color: var(--global-color-1); 
+}
+
+.black {
+    color: black;
 }
 
 .header-text {
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 10px;
-    text-align: left;
+    display: inline-block; 
+    vertical-align: top; 
+    margin-left: 10px; 
+    text-align: left; 
 }
 
-/* Header styling */
+h2 {
+    font-size: 170%;
+}
+
+h2.mission,
+h2.ticket-packages {
+    text-indent: 0; 
+}
+
+h3 {
+    font-size: 130%;
+    font-style: italic; 
+    text-indent: 0; 
+}
+
+a:focus,
+a:hover {
+    font-style: italic; 
+}
+
+footer p {
+    text-align: center; 
+}
+
+.shadow {
+    text-shadow: 2px 2px 4px var(--global-color-1); 
+}
+
+.float-left {
+    float: left;
+    margin-right: 15px; 
+}
+
 header {
-    border-bottom: 3px solid var(--global-color-1);
-    padding-top: 1.5em;
-    padding-bottom: 2em;
+    border-bottom: 3px solid #931420; /* Add bottom border to the header */
 }
 
-footer {
-    background-color: var(--global-color-1);
-    color: white;
-    padding: 1em;
-    text-align: center;
+h1 {
+    border-top: 3px solid #931420; /* Top border */
+    border-bottom: 3px solid #931420; /* Bottom border */
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
 }
