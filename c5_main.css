@@ -34,8 +34,8 @@ h1, h2 {
 }
 
 .title-wrapper {
-    border-bottom: 3px solid #931420; /* Bottom border for both h1 and h2 */
-    padding-bottom: 5px; /* Optional: adds space before the border */
+    border-bottom: 3px solid #931420;
+    padding-bottom: 5px;
 }
 
 h1 {
@@ -66,6 +66,8 @@ a:hover {
 
 footer p {
     text-align: center;
+    border-top: 3px solid #931420; /* Add top border to the footer */
+    padding-top: 10px; /* Optional: space before the border */
 }
 
 .shadow {
@@ -87,12 +89,12 @@ header::after {
     clear: both;
 }
 
-/* Add borders specifically to the "This season's guest speakers" h1 */
+/* Borders for "This season's guest speakers" h1 */
 h1.season-speakers {
     border-top: 3px solid #931420;  /* Add top border */
     border-bottom: 3px solid #931420;  /* Add bottom border */
-    padding-top: 10px; /* Optional: add space inside the top border */
-    padding-bottom: 10px; /* Optional: add space inside the bottom border */
-    margin-top: 20px; /* Optional: add space above the heading */
-    margin-bottom: 20px; /* Optional: add space below the heading */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
