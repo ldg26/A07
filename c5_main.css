@@ -1,5 +1,12 @@
 :root {
-    --global-color-1: #800000; 
+    --global-color-1: #800000;
+}
+
+/* Reset Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -37,9 +44,15 @@ h2 {
     font-size: 170%;
 }
 
+h2.mission,
+h2.ticket-packages {
+    text-indent: 0;
+}
+
 h3 {
     font-size: 130%;
     font-style: italic;
+    text-indent: 0;
 }
 
 a:focus,
@@ -58,14 +71,19 @@ footer p {
 
 .float-left {
     float: left;
-    margin-right: 30px; /* 30px padding on right */
-    padding-left: 30px; /* 30px padding on left */
+    margin-right: 15px;
 }
 
+/* Header styling */
 header {
     padding-top: 1.5em;
     padding-bottom: 2em;
     border-bottom: 3px solid #931420;
+}
+
+header img {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 header::after {
@@ -74,13 +92,36 @@ header::after {
     clear: both;
 }
 
+/* Main element styling */
 main {
-    padding-left: 30px; /* Added 30px padding to the left */
-    padding-right: 30px; /* Added 30px padding to the right */
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-/* Reset the text-indent rules as per instruction */
-h2.mission,
-h2.ticket-packages {
-    text-indent: 0;
+h1 {
+    border-top: 3px solid #931420;
+    border-bottom: 3px solid #931420;
+}
+
+/* Footer styling */
+footer {
+    background-color: #931420;
+    padding: 10px 0;
+}
+
+/* Blockquote styling */
+blockquote {
+    font-style: italic;
+}
+
+/* Add box shadow to the Speakers heading */
+h1.black {
+    border: 4px double var(--global-color-1);
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Optional gradient background for the header */
+header {
+    background: linear-gradient(30deg, #6bb73 0%, #f6bb73 30%, white 50%, #6bb73 80%, #f6bb73 100%);
 }
