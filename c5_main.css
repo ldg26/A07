@@ -88,6 +88,15 @@ header::after {
     clear: both; 
 }
 
+p {
+        text-indent: 15px; /* Normal indent for all paragraphs */
+        }
+
+.quote {
+      text-indent: 40px; /* Larger indent for the quote paragraph */
+        }
+
+
 /* Borders for "This season's guest speakers" h1 */
 h1.season-speakers {
     border-top: 3px solid #931420; 
