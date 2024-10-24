@@ -1,120 +1,48 @@
-:root {
-    --global-color-1: #800000; 
-}
-
-/* Reset styles */
+/* Reset Selector */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html {
-    background-color: white;  /* Sets background color for the entire HTML */
+/* Existing CSS */
+:root {
+    --global-color-1: #931420;
 }
 
 body {
-    font-family: Arial, sans-serif; 
-    width: 600px;                   /* Set the width of the body */
-    margin: 0 auto;                /* Centers the body horizontally */
-    border: 3px solid #931420;     /* Adds a solid border to the body */
-    background-color: #fffded;     /* Sets the background color for the body */
+    font-family: Arial, sans-serif;
+    width: 600px;
+    margin: 0 auto;
+    border: 3px solid var(--global-color-1);
+    background-color: #fffded;
+}
+
+html {
+    background-color: white;
 }
 
 h1, h2 {
-    color: var(--global-color-1); 
-}
-
-.red {
-    color: var(--global-color-1); 
-}
-
-.black {
-    color: black;
+    color: var(--global-color-1);
 }
 
 .header-text {
-    display: inline-block; 
-    vertical-align: top; 
-    margin-left: 10px; 
-    text-align: left; 
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    text-align: left;
 }
 
-h2 {
-    font-size: 170%;
-    border-top: 3px solid #931420;   /* Top border for h2 */
-    border-bottom: 3px solid #931420;/* Bottom border for h2 */
-    padding: 10px 0;                 /* Padding for h2 */
-}
-
-h1 {
-    border-bottom: 3px solid #931420; /* Bottom border for h1 */
-    padding-bottom: 10px;             /* Padding for h1 */
-}
-
-h2.mission,
-h2.ticket-packages {
-    text-indent: 0; 
-}
-
-h3 {
-    font-size: 130%;
-    font-style: italic; 
-    text-indent: 0; 
-}
-
-a:focus,
-a:hover {
-    font-style: italic; 
+/* Header styling */
+header {
+    border-bottom: 3px solid var(--global-color-1);
+    padding-top: 1.5em;
+    padding-bottom: 2em;
 }
 
 footer {
-    background-color: #931420; /* Background color for footer */
-    border-top: 3px solid #931420; /* Top border for footer */
-    padding: 10px;              /* Padding for footer */
-}
-
-footer p {
-    text-align: center; 
-    color: white; /* Change font color for footer text */
-}
-
-.shadow {
-    text-shadow: 2px 2px 4px var(--global-color-1); 
-}
-
-.float-left {
-    float: left;
-    margin-right: 15px; 
-}
-
-/* Clear floats */
-header::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Header styles */
-header {
-    padding-top: 1.5em;    /* Adds space at the top of the header */
-    padding-bottom: 2em;   /* Adds space at the bottom of the header */
-    border-bottom: 3px solid #931420; /* Bottom border same as body */
-    background: linear-gradient(30deg, #6bb73a 0%, #f6bb73 30%, white 50%, #6bb73a 80%, #f6bb73 100%);
-}
-
-/* Image padding */
-header img {
-    padding-left: 30px;   /* Adds space on the left of the image */
-    padding-right: 30px;  /* Adds space on the right of the image */
-}
-
-/* Additional styles for the main element */
-main {
-    padding: 30px; /* Optional: Add padding for the main content */
-}
-
-/* Blockquote styles */
-blockquote {
-    font-style: italic; /* Italicize blockquote text */
+    background-color: var(--global-color-1);
+    color: white;
+    padding: 1em;
+    text-align: center;
 }
