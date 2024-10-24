@@ -85,6 +85,7 @@ header {
 }
 
 h1 {
+    border-top: 3px solid #931420; /* Top border for h1 */
     border-bottom: 3px solid #931420; /* Bottom border for h1 */
     padding: 10px 0; /* Optional: Add padding for spacing */
 }
