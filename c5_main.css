@@ -70,6 +70,11 @@ header {
     border-bottom: 3px solid #931420; /* Add bottom border to the header */
 }
 
+h1 {
+    border-top: 3px solid #931420; /* Top border */
+    border-bottom: 3px solid #931420; /* Bottom border */
+}
+
 header::after {
     content: "";
     display: table;
