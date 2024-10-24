@@ -69,11 +69,6 @@ header {
     border-bottom: 3px solid #931420; /* Same border as the body */
 }
 
-    padding-top: 1.5em;
-    padding-bottom: 2em;
-    border-bottom: 3px solid #931420;
-}
-
 header::after {
     content: "";
     display: table;
