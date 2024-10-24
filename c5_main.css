@@ -1,32 +1,29 @@
 :root {
-    --global-color-1: #800000; 
+    --global-color-1: #800000;
+}
+
+/* Reset Selector (Step 8) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
     width: 600px;
-    margin: 0 auto;
-    border: 2px solid #931420;
-    background-color: #fffded;
+    margin: 0 auto; /* Centering the body */
+    border: 3px solid #931420; /* Border around body (Step 2) */
+    background-color: #fffded; /* Background color for body (Step 3) */
 }
 
+/* Background color for html (Step 4) */
 html {
     background-color: white;
 }
 
-h1 {
-    color: var(--global-color-1); /* Ensure h1 uses the global color */
-    background: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
-    padding-top: 0.5em; /* Add padding to the top */
-    padding-bottom: 0.5em; /* Add padding to the bottom */
-}
-.guest-speakers-title {
-    color: black; /* Remove color from guest speakers */
-    border-top: 2px solid #931420; /* Add top border */
-    padding-top: 1em; /* Add padding to the top */
-    padding-bottom: 0.5em; /* Adjust padding as necessary */
-    margin-left: 0; /* Remove margin to avoid centering issues */
-    margin-right: 0; /* Remove margin to avoid centering issues */
+h1, h2 {
+    color: var(--global-color-1);
 }
 
 .red {
@@ -45,14 +42,19 @@ h1 {
 }
 
 h2 {
-    color: black; /* Change h2 color to black or whatever color you want */
     font-size: 170%;
-    text-indent: 0; /* Ensure no text indent for h2 */
+}
+
+/* Specific classes for mission and ticket packages */
+h2.mission,
+h2.ticket-packages {
+    text-indent: 0;
 }
 
 h3 {
     font-size: 130%;
     font-style: italic;
+    text-indent: 0; /* Removed text-indent (Step 9) */
 }
 
 a:focus,
@@ -62,7 +64,6 @@ a:hover {
 
 footer p {
     text-align: center;
-    color: white;
 }
 
 .shadow {
@@ -71,21 +72,71 @@ footer p {
 
 .float-left {
     float: left;
-    margin-right: 30px; /* 30px padding on right */
-    padding-left: 30px; /* 30px padding on left */
+    margin-right: 15px;
 }
 
+/* Clearfix for header */
 header::after {
     content: "";
     display: table;
     clear: both;
 }
 
-main {
-    padding-left: 30px; /* Added 30px padding to the left */
-    padding-right: 30px; /* Added 30px padding to the right */
+/* Step 9 - Padding for the header */
+header {
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    border-bottom: 3px solid #931420; /* Step 5: Bottom border for header */
 }
 
+/* Remove text-indent from h2 and h3 elements */
+h2.mission,
+h2.ticket-packages,
+h3 {
+    text-indent: 0;
+}
+
+/* Add padding to the header image (Step 9) */
+header img {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Borders for h1 inside the main element (Step 6) */
+main h1 {
+    border-top: 3px solid #931420;
+    border-bottom: 3px solid #931420;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+/* Footer styling (Step 7) */
+footer {
+    background-color: #931420;
+    color: white;
+    padding: 1em 0;
+}
+
+/* Padding for main element (Step 9) */
+main {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Blockquote italic styling (Step 12) */
 blockquote {
     font-style: italic;
+}
+
+/* Gradient background for header (Step 13) */
+header {
+    background: linear-gradient(30deg, #6bb73 0%, #f6bb73 30%, white 50%, #6bb73 80%, #f6bb73 100%);
+}
+
+/* Box shadow and double border for "Speakers" heading (Step 14, Step 15) */
+h1.speakers {
+    border: 5px double #800000;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 1em;
 }
