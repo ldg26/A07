@@ -94,10 +94,10 @@ header::after {
 
 /* Borders for "This season's guest speakers" h1 */
 h1.season-speakers {
-    border-top: 3px solid #931420;
-    border-bottom: 3px solid #931420;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    border-top: 3px solid #931420; /* Top border */
+    border-bottom: 3px solid #931420; /* Bottom border */
+    padding-top: 10px; /* Space inside the top border */
+    padding-bottom: 10px; /* Space inside the bottom border */
+    margin-top: 20px; /* Space above the section */
+    margin-bottom: 20px; /* Space below the section */
 }
