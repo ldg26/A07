@@ -20,9 +20,8 @@ h1 {
     padding-top: .5 em; /* Add padding to the top */
     padding-bottom: .5em; /* Add padding to the bottom */
     border-bottom: 2px solid #931420; /* Add border at the bottom */
-    margin-left: -30px; /* Negative margin to offset the padding */
-    margin-right: -30px; /* Negative margin to offset the padding */
-    width: calc(100% + 60px); /* Full width accounting for negative margins */
+
+
 }
 
 .red {
