@@ -1,17 +1,9 @@
-:root {
+ :root {
     --global-color-1: #800000; 
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fffded; /* Step 3: Body background color */
-    width: 600px; /* Step 1: Set body width */
-    margin: 0 auto; /* Step 1: Center the body */
-    border: 3px solid #931420; /* Step 1: Body border */
-}
-
-html {
-    background-color: white; /* Step 3: Fix the window background color */
+    font-family: Arial, sans-serif; 
 }
 
 h1, h2 {
