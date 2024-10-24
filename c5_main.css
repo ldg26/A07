@@ -88,4 +88,6 @@ header::after {
     clear: both;
 }
 
-/* Styles for main element, footer, and other elements should follow... */
+main {
+    padding: 0 30px; /* Added 30 pixels of padding to the right and left of the main element */
+}
