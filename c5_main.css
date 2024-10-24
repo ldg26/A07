@@ -4,14 +4,14 @@
 
 body {
     font-family: Arial, sans-serif; 
-    width: 600px; /* Set the body width */
-    margin: 0 auto; /* Center the body */
-    border: 3px solid #931420; /* Border around the body */
-    background-color: #fffded; /* Background color for the body */
+    width: 600px;
+    margin: 0 auto;
+    border: 3px solid #931420; /* Body border */
+    background-color: #fffded; /* Background color for body */
 }
 
 html {
-    background-color: white; /* Set background color for the HTML element */
+    background-color: white; /* Background color for the entire window */
 }
 
 h1, h2 {
@@ -54,14 +54,14 @@ a:hover {
 }
 
 footer {
-    background-color: #931420; /* Sets the background color of the footer */
-    color: white; /* Changes the font color of the footer text to white */
-    border-top: 3px solid #931420; /* Ensures the top border matches the footer background */
-    text-align: center; 
+    background-color: #931420; /* Footer background color */
+    color: #FFFFFF; /* Font color for footer */
+    padding: 1em; /* Optional padding for footer */
+    text-align: center; /* Center text in footer */
 }
 
 footer p {
-    margin: 0; /* Removes default margin */
+    text-align: center; 
 }
 
 .shadow {
@@ -73,40 +73,19 @@ footer p {
     margin-right: 15px; 
 }
 
-header {
-    border-bottom: 3px solid #931420; /* Bottom border for the header */
-}
-
 header::after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* Additional styles for spacing and padding */
+/* Additional styles */
 header {
-    padding-top: 1.5em; /* Padding for header */
-    padding-bottom: 2em; /* Padding for header */
+    border-bottom: 3px solid #931420; /* Bottom border for header */
 }
 
-main {
-    padding: 30px; /* Padding for main element */
-}
-
-/* Reset styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-blockquote {
-    font-style: italic; /* Italicize blockquote */
-}
-
-/* Styles for Speakers heading */
-h1.speakers {
-    border: double; /* Double border */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 2px 2px 5px gray; /* Box shadow */
+h1 {
+    border-top: 3px solid #931420; /* Top border for h1 */
+    border-bottom: 3px solid #931420; /* Bottom border for h1 */
+    padding: 10px 0; /* Optional: Add padding for spacing */
 }
