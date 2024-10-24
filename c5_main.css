@@ -34,7 +34,17 @@ h1, h2 {
     text-align: left; 
 }
 
+.title-wrapper {
+    border-bottom: 3px solid #931420; /* Bottom border for both h1 and h2 */
+    padding-bottom: 5px; /* Optional: adds space before the border */
+}
+
+h1 {
+    margin-bottom: 0; /* Remove bottom margin to bring h2 closer */
+}
+
 h2 {
+    margin-top: 0; /* Remove top margin to bring h2 closer to h1 */
     font-size: 170%;
 }
 
