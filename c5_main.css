@@ -84,3 +84,8 @@ h2.mission,
 h2.ticket-packages {
     text-indent: 0;
 }
+
+blockquote {
+    font-style: italic;
+}
+
