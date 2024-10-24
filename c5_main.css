@@ -1,116 +1,91 @@
-/* Global Reset */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* This ensures that padding and border widths are included in the element's total width and height */
 }
 
-/* Root colors */
 :root {
-    --global-color-1: #800000; /* Dark red for accents */
+    --global-color-1: #800000; 
 }
 
-/* Page Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; 
     width: 600px;
     margin: 0 auto;
-    border: 3px solid #931420;
-    background-color: #fffded; /* Light background */
+    border: 3px solid #931420; /* Body border */
+    background-color: #fffded; /* Background color for body */
 }
 
 html {
-    background-color: white;
+    background-color: white; /* Background color for the entire window */
 }
 
-/* Header styling */
 header {
-    border-bottom: 3px solid #931420;
-    padding: 1.5em 0 2em;
+    border-bottom: 3px solid #931420; /* Bottom border for header */
+    padding: 1.5em 0 2em; /* Top and bottom padding for header */
 }
 
-/* Title and headers */
 h1, h2 {
-    color: var(--global-color-1);
+    color: var(--global-color-1); 
 }
 
 .red {
-    color: var(--global-color-1);
+    color: var(--global-color-1); 
 }
 
 .black {
     color: black;
 }
 
-/* Header text styling */
 .header-text {
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 10px;
-    text-align: left;
+    display: inline-block; 
+    vertical-align: top; 
+    margin-left: 10px; 
+    text-align: left; 
 }
 
 h2 {
     font-size: 170%;
+    text-indent: 0; /* Removed text-indent */
 }
 
 h2.mission,
 h2.ticket-packages {
-    text-indent: 0;
+    text-indent: 0; 
 }
 
 h3 {
     font-size: 130%;
-    font-style: italic;
+    font-style: italic; 
+    text-indent: 0; /* Removed text-indent */
 }
 
 a:focus,
 a:hover {
-    font-style: italic;
+    font-style: italic; 
 }
 
-/* Footer styling */
 footer p {
-    text-align: center;
+    text-align: center; 
 }
 
-/* Shadow styling for 75th Year text */
 .shadow {
-    text-shadow: 2px 2px 4px var(--global-color-1);
+    text-shadow: 2px 2px 4px var(--global-color-1); 
 }
 
-/* Image and float */
 .float-left {
     float: left;
-    margin-right: 15px;
+    margin-right: 15px; 
 }
 
 header img {
-    padding: 0 30px;
+    padding: 0 30px; /* Added padding to the right and left of the image */
 }
 
-/* Clear floats */
 header::after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* Main section padding */
-main {
-    padding: 0 30px;
-}
-
-/* Speaker images */
-main img {
-    display: block;
-    margin: 15px auto;
-    width: 100px; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-}
-
-/* Speaker Links */
-h3 a {
-    text-decoration: none;
-    color: var(--global-color-1);
-}
+/* Styles for main element, footer, and other elements should follow... */
