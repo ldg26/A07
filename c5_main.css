@@ -2,16 +2,16 @@
     --global-color-1: #800000; 
 }
 
-html {
-    background-color: white; /* Set background color for the html element */
-}
-
 body {
     font-family: Arial, sans-serif; 
-    width: 600px; /* Set width for the body */
-    margin: 0 auto; /* Center the body */
-    border: 3px solid #931420; /* Add border around the body */
-    background-color: #fffded; /* Set background color for the body */
+    width: 600px;
+    margin: 0 auto; 
+    border: 3px solid #931420; 
+    background-color: #fffded; 
+}
+
+html {
+    background-color: white; 
 }
 
 h1, h2 {
@@ -53,6 +53,13 @@ a:hover {
     font-style: italic; 
 }
 
+footer {
+    background-color: #931420; /* Same as the border color */
+    color: white; /* Change the font color to white */
+    padding: 20px; /* Optional: Add padding for spacing */
+    text-align: center; /* Center align the footer text */
+}
+
 footer p {
     text-align: center; 
 }
@@ -64,15 +71,6 @@ footer p {
 .float-left {
     float: left;
     margin-right: 15px; 
-}
-
-header {
-    border-bottom: 3px solid #931420; /* Add bottom border to the header */
-}
-
-h1 {
-    border-top: 3px solid #931420; /* Top border */
-    border-bottom: 3px solid #931420; /* Bottom border */
 }
 
 header::after {
