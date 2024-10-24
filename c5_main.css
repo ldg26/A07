@@ -59,11 +59,11 @@ a:hover {
 }
 
 footer {
-    background-color: var(--global-color-1); /* Use the global variable for footer background */
-    color: white; /* Set text color to white */
+    background-color: var(--global-color-1); 
+    color: white; 
     text-align: center; 
-    padding: 10px 0; /* Optional: Adds some padding for better spacing */
-    border-top: 3px solid #931420; /* Keep the top border */
+    padding: 10px 0; 
+    border-top: 3px solid #931420; 
 }
 
 .shadow {
@@ -75,11 +75,11 @@ footer {
     margin-right: 15px; 
 }
 
-/* Gradient background for header */
+
 header {
     border-bottom: 3px solid #931420; 
     background: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
-    padding: 10px 0; /* Optional: Adds some padding to make the gradient more visible */
+    padding: 10px 0; 
 }
 
 header::after {
@@ -89,15 +89,15 @@ header::after {
 }
 
 p {
-        text-indent: 15px; /* Normal indent for all paragraphs */
+        text-indent: 15px; 
         }
 
 .quote {
-      text-indent: 40px; /* Larger indent for the quote paragraph */
+      text-indent: 40px; 
         }
 
 
-/* Borders for "This season's guest speakers" h1 */
+
 h1.season-speakers {
     border-top: 3px solid #931420; 
     border-bottom: 3px solid #931420; 
