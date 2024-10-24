@@ -17,7 +17,8 @@ body {
 
 header {
     padding: 1.5em 0 2em; /* 1.5em top padding and 2em bottom padding */
-    border-bottom: 3px solid #931420; /* Bottom border for header */
+    border: 3px solid #931420; /* Add border to the header */
+    border-bottom: none; /* Remove bottom border for header to avoid double border */
 }
 
 h1, h2 {
