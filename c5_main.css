@@ -1,3 +1,4 @@
+
 :root {
     --global-color-1: #800000; 
 }
@@ -31,10 +32,6 @@ h1, h2 {
     vertical-align: top; 
     margin-left: 10px; 
     text-align: left; 
-}
-
-h1 {
-    border-bottom: 3px solid #931420; /* Bottom border for the main title */
 }
 
 h2 {
@@ -74,8 +71,14 @@ header {
     border-bottom: 3px solid #931420; /* Add bottom border to the header */
 }
 
+h1 {
+    border-top: 3px solid #931420; /* Top border */
+    border-bottom: 3px solid #931420; /* Bottom border */
+}
+
 header::after {
     content: "";
     display: table;
     clear: both;
 }
+
