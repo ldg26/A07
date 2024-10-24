@@ -1,33 +1,23 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 :root {
     --global-color-1: #800000; 
 }
 
-body {
-    font-family: Arial, sans-serif; 
-    width: 600px;
-    margin: 0 auto;
-    border: 3px solid #931420; /* Body border */
-    background-color: #fffded; /* Background color for body */
+* {
+    margin: 0; 
+    padding: 0; 
 }
 
-html {
-    background-color: white; /* Background color for the entire window */
+body {
+    font-family: Arial, sans-serif; 
+    width: 600px; 
+    margin: 0 auto; 
+    border: 3px solid #931420; /* Body border */
+    background-color: #fffded; 
 }
 
 header {
-    padding-top: 1.5em;  /* Top padding */
-    padding-bottom: 2em;  /* Bottom padding */
-}
-
-header img {
-    padding-right: 30px;  /* Right padding for the image */
-    padding-left: 30px;   /* Left padding for the image */
+    padding: 1.5em 0 2em; /* 1.5em top padding and 2em bottom padding */
+    border-bottom: 3px solid #931420; /* Bottom border for header */
 }
 
 h1, h2 {
@@ -51,13 +41,18 @@ h1, h2 {
 
 h2 {
     font-size: 170%;
-    text-indent: 0; /* Ensure text-indent is removed */
+    text-indent: 0; /* Ensure no text-indent */
+}
+
+h2.mission,
+h2.ticket-packages {
+    text-indent: 0; 
 }
 
 h3 {
     font-size: 130%;
     font-style: italic; 
-    text-indent: 0; /* Ensure text-indent is removed */
+    text-indent: 0; /* Ensure no text-indent */
 }
 
 a:focus,
@@ -78,10 +73,13 @@ footer p {
     margin-right: 15px; 
 }
 
+/* Padding for images in header */
+header img {
+    padding: 0 30px; /* Add padding to the left and right of the image */
+}
+
 header::after {
     content: "";
     display: table;
     clear: both;
 }
-
-/* Additional styles continue here... */
