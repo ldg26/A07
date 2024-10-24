@@ -1,14 +1,16 @@
-:root {
-    --global-color-1: #800000;
-}
-
-/* Reset Selector */
+/* Reset selector */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Global color variable */
+:root {
+    --global-color-1: #800000;
+}
+
+/* Body styles */
 body {
     font-family: Arial, sans-serif;
     width: 600px;
@@ -17,22 +19,27 @@ body {
     background-color: #fffded;
 }
 
+/* HTML element for background fix */
 html {
     background-color: white;
 }
 
-h1, h2 {
-    color: var(--global-color-1);
+/* Header styles */
+header {
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    border-bottom: 3px solid #931420;
 }
 
-.red {
-    color: var(--global-color-1);
+/* Header image styles */
+header img {
+    float: left;
+    margin-right: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-.black {
-    color: black;
-}
-
+/* Header text */
 .header-text {
     display: inline-block;
     vertical-align: top;
@@ -40,88 +47,73 @@ h1, h2 {
     text-align: left;
 }
 
+/* Title and subtitle styles */
+h1 {
+    font-size: 200%;
+    text-align: left;
+}
+
+h1, h2 {
+    color: var(--global-color-1);
+}
+
+/* Specific h2 styles */
+h2.mission, h2.ticket-packages {
+    text-indent: 0; /* Removed text indent */
+}
+
 h2 {
     font-size: 170%;
 }
 
-h2.mission,
-h2.ticket-packages {
-    text-indent: 0;
-}
-
+/* h3 heading styles */
 h3 {
     font-size: 130%;
     font-style: italic;
-    text-indent: 0;
+    text-indent: 0; /* Removed text indent */
 }
 
-a:focus,
-a:hover {
+/* Anchor hover styles */
+a:focus, a:hover {
     font-style: italic;
 }
 
+/* Footer styles */
 footer p {
     text-align: center;
+    background-color: #931420;
     color: white;
+    padding: 10px;
+    border-top: 3px solid #931420;
 }
 
+/* Shadow effect */
 .shadow {
     text-shadow: 2px 2px 4px var(--global-color-1);
 }
 
+/* Float left */
 .float-left {
     float: left;
     margin-right: 15px;
 }
 
-/* Header styling */
-header {
-    padding-top: 1.5em;
-    padding-bottom: 2em;
-    border-bottom: 3px solid #931420;
-}
-
-header img {
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-header::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Main element styling */
+/* Main element padding */
 main {
     padding-left: 30px;
     padding-right: 30px;
 }
 
-h1 {
-    border-top: 3px solid #931420;
-    border-bottom: 3px solid #931420;
-}
-
-/* Footer styling */
-footer {
-    background-color: #931420;
-    padding: 10px 0;
-}
-
-/* Blockquote styling */
+/* Styling for blockquote */
 blockquote {
     font-style: italic;
 }
 
-/* Add box shadow to the Speakers heading */
-h1.black {
-    border: 4px double var(--global-color-1);
-    border-radius: 10px;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+/* Additional h1 and h2 styles */
+.red {
+    color: var(--global-color-1);
 }
 
-/* Optional gradient background for the header */
-header {
-    background: linear-gradient(30deg, #6bb73 0%, #f6bb73 30%, white 50%, #6bb73 80%, #f6bb73 100%);
+.black {
+    color: black;
 }
