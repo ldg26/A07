@@ -19,7 +19,7 @@ h1 {
     background: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
     padding-top: 1.5em; /* Add padding to the top */
     padding-bottom: 2em; /* Add padding to the bottom */
-    border-bottom: 3px solid #931420; /* Add border at the bottom */
+    border-bottom: 2px solid #931420; /* Add border at the bottom */
 }
 
 .red {
