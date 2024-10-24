@@ -1,25 +1,26 @@
 :root {
-    --global-color-1: #800000; 
+    --global-color-1: #800000;
+    --border-color: #931420;
 }
 
 body {
-    font-family: Arial, sans-serif; 
+    font-family: Arial, sans-serif;
     width: 600px;
     margin: 0 auto;
-    border: 3px solid #931420; /* Body border */
-    background-color: #fffded; /* Background color for body */
+    border: 3px solid var(--border-color);
+    background-color: #fffded;
 }
 
 html {
-    background-color: white; /* Background color for the entire window */
+    background-color: white;
 }
 
 h1, h2 {
-    color: var(--global-color-1); 
+    color: var(--global-color-1);
 }
 
 .red {
-    color: var(--global-color-1); 
+    color: var(--global-color-1);
 }
 
 .black {
@@ -27,10 +28,10 @@ h1, h2 {
 }
 
 .header-text {
-    display: inline-block; 
-    vertical-align: top; 
-    margin-left: 10px; 
-    text-align: left; 
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    text-align: left;
 }
 
 h2 {
@@ -39,38 +40,36 @@ h2 {
 
 h2.mission,
 h2.ticket-packages {
-    text-indent: 0; 
+    text-indent: 0;
 }
 
 h3 {
     font-size: 130%;
-    font-style: italic; 
-    text-indent: 0; 
+    font-style: italic;
+    text-indent: 0;
 }
 
 a:focus,
 a:hover {
-    font-style: italic; 
-}
-
-footer {
-    background-color: #931420; /* Footer background color */
-    color: #FFFFFF; /* Font color for footer */
-    padding: 1em; /* Optional padding for footer */
-    text-align: center; /* Center text in footer */
+    font-style: italic;
 }
 
 footer p {
-    text-align: center; 
+    text-align: center;
 }
 
 .shadow {
-    text-shadow: 2px 2px 4px var(--global-color-1); 
+    text-shadow: 2px 2px 4px var(--global-color-1);
 }
 
 .float-left {
     float: left;
-    margin-right: 15px; 
+    margin-right: 15px;
+}
+
+header {
+    border-bottom: 3px solid var(--border-color); /* Bottom border added to header */
+    padding: 1.5em 30px 2em; /* Padding at the top and bottom */
 }
 
 header::after {
@@ -79,13 +78,27 @@ header::after {
     clear: both;
 }
 
-/* Additional styles */
-header {
-    border-bottom: 3px solid #931420; /* Bottom border for header */
+main {
+    padding: 0 30px; /* Padding for the main element */
+}
+
+blockquote {
+    font-style: italic; /* Italicize the blockquote element */
 }
 
 h1 {
-    border-top: 3px solid #931420; /* Top border for h1 */
-    border-bottom: 3px solid #931420; /* Bottom border for h1 */
-    padding: 10px 0; /* Optional: Add padding for spacing */
+    border-top: 3px solid var(--border-color);
+    border-bottom: 3px solid var(--border-color); /* Borders added to the h1 in main element */
+    padding: 0.5em 0;
+}
+
+footer {
+    background-color: var(--border-color); /* Same color as borders */
+    color: white; /* White text for readability */
+    padding: 1em;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
 }
