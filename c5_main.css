@@ -1,68 +1,91 @@
-/* Step 8: Reset selector */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+    --global-color-1: #800000; 
 }
 
-/* Body styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff; /* Background for the body */
+    width: 600px;
+    margin: 0 auto;
+    border: 3px solid #931420;
+    background-color: #fffded;
 }
 
-/* Header styling */
-header {
-    background: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
-    padding-top: 1.5em; /* Padding at the top */
-    padding-bottom: 2em; /* Padding at the bottom */
-    border-bottom: 3px solid #931420; /* Bottom border */
+html {
+    background-color: white;
 }
 
-/* Floating image */
-.float-left {
-    float: left;
-    padding: 0 30px; /* 30 pixels of padding on the left and right of the image */
+h1, h2 {
+    color: var(--global-color-1);
 }
 
-/* Header text styling */
-.header-text h1 {
-    color: #931420; /* Main title color */
-}
-
-/* Subtitle color */
 .red {
-    color: #931420; /* Red color for specific text */
+    color: var(--global-color-1);
 }
 
 .black {
-    color: #000000; /* Black color for specific text */
+    color: black;
 }
 
-/* Mission heading styling */
-.mission {
-    margin-top: 1.5em; /* Spacing above the mission heading */
+.header-text {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    text-align: left;
 }
 
-/* Ticket packages heading styling */
-.ticket-packages {
-    margin-top: 2em; /* Spacing above ticket packages heading */
+h2 {
+    font-size: 170%;
 }
 
-/* Main content styling */
+h3 {
+    font-size: 130%;
+    font-style: italic;
+}
+
+a:focus,
+a:hover {
+    font-style: italic;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
+.shadow {
+    text-shadow: 2px 2px 4px var(--global-color-1);
+}
+
+.float-left {
+    float: left;
+    margin-right: 30px; /* 30px padding on right */
+    padding-left: 30px; /* 30px padding on left */
+}
+
+header {
+    background: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+    padding-top: 1.5em; /* Make sure this line is included if not already */
+    padding-bottom: 2em; /* Make sure this line is included if not already */
+    border-bottom: 3px solid #931420; /* Ensure this line is included for the border */
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 main {
-    padding: 30px; /* 30 pixels of padding around the main content */
+    padding-left: 30px; /* Added 30px padding to the left */
+    padding-right: 30px; /* Added 30px padding to the right */
 }
 
-/* Footer styling */
-footer {
-    text-align: center; /* Centering footer text */
-    margin-top: 2em; /* Space above the footer */
+/* Reset the text-indent rules as per instruction */
+h2.mission,
+h2.ticket-packages {
+    text-indent: 0;
 }
 
-/* Additional styling for h2 and h3 elements (if needed) */
-h2, h3 {
-    padding-left: 30px; /* Optional left padding */
-    padding-right: 30px; /* Optional right padding */
-    /* Removed text-indent as per step 9 */
+blockquote {
+    font-style: italic;
 }
