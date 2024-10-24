@@ -20,6 +20,14 @@ h1 {
     padding-top: 0.5em; /* Add padding to the top */
     padding-bottom: 0.5em; /* Add padding to the bottom */
 }
+.guest-speakers-title {
+    color: black; /* Remove color from guest speakers */
+    border-top: 2px solid #931420; /* Add top border */
+    padding-top: 1em; /* Add padding to the top */
+    padding-bottom: 0.5em; /* Adjust padding as necessary */
+    margin-left: 0; /* Remove margin to avoid centering issues */
+    margin-right: 0; /* Remove margin to avoid centering issues */
+}
 
 .red {
     color: var(--global-color-1);
